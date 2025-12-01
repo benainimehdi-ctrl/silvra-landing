@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Silvra - Appareil de Soin Visage LED Pro</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .animate-fade-in {
+            animation: fadeIn 0.6s ease-out;
+        }
+        .gradient-bg {
+            background: linear-gradient(135deg, #faf5ff 0%, #fce7f3 50%, #ffffff 100%);
+        }
+    </style>
+</head>
+<body class="gradient-bg min-h-screen">
+    <!-- Header -->
+    <header class="bg-white/80 backdrop-blur-md shadow-sm sticky top-0 z-40">
+        <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+            <h1 class="text-3xl font-bold bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">
+                Silvra
+            </h1>
+            <button onclick="openCart()" class="relative p-2 hover:bg-purple-50 rounded-full transition">
+                <svg class="w-6 h-6 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"></path>
+                </svg>
+                <span id="cart-badge" class="hidden absolute -top-1 -right-1 bg-pink-500 text-white text-xs w-5 h-5 rounded-full flex items-center justify-center">1</span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="max-w-7xl mx-auto px-4 py-12">
+        <div class="grid md:grid-cols-2 gap-12 items-center animate-fade-in">
+            <!-- Product Image -->
+            <div class="relative">
+                <div class="absolute inset-0 bg-gradient-to-br from-purple-200 to-pink-200 rounded-3xl blur-3xl opacity-30"></div>
+                <img src="https://images.unsplash.com/photo-1596462502278-27bfdc403348?w=800&q=80" 
+                     alt="Appareil de Soin Visage LED Pro" 
+                     class="relative rounded-2xl shadow-2xl w-full object-cover">
+                <div class="absolute top-4 right-4 bg-pink-500 text-white px-4 py-2 rounded-full font-bold shadow-lg">
+                    -50% 🔥
+                </div>
+            </div>
+
+            <!-- Product Info -->
+            <div class="space-y-6">
+                <div>
+                    <h2 class="text-4xl font-bold text-gray-900 mb-2">
+                        Appareil de Soin Visage LED Pro
+                    </h2>
+                    <div class="flex items-center gap-2 mb-4">
+                        <div class="flex">
+                            <svg class="w-5 h-5 text-yellow-400 fill-current" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
+                            <svg class="w-5 h-5 text-yellow-400 fill-current" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
+                            <svg class="w-5 h-5 text-yellow-400 fill-current" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
+                            <svg class="w-5 h-5 text-yellow-400 fill-current" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
+                            <svg class="w-5 h-5 text-yellow-400 fill-current" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
+                        </div>
+                        <span class="text-gray-600 ml-2">(4.8/5 - 2,847 avis)</span>
+                    </div>
+                </div>
+
+                <p class="text-lg text-gray-700 leading-relaxed">
+                    Découvrez la technologie LED professionnelle pour une peau radieuse et rajeunie. 
+                    Utilisé par les experts en soins de la peau du monde entier.
+                </p>
+
+                <!-- Benefits -->
+                <div class="grid grid-cols-1 gap-3">
+                    <div class="flex items-center gap-3 bg-white p-3 rounded-lg shadow-sm">
+                        <svg class="w-5 h-5 text-purple-600 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"></path>
+                        </svg>
+                        <span class="text-gray-700">Réduit les rides et ridules</span>
+                    </div>
+                    <div class="flex items-center gap-3 bg-white p-3 rounded-lg shadow-sm">
+                        <svg class="w-5 h-5 text-purple-600 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                        </svg>
+                        <span class="text-gray-700">Stimule la production de collagène</span>
+                    </div>
+                    <div class="flex items-center gap-3 bg-white p-3 rounded-lg shadow-sm">
+                        <svg class="w-5 h-5 text-purple-600 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                        </svg>
+                        <span class="text-gray-700">Améliore l'élasticité de la peau</span>
+                    </div>
+                    <div class="flex items-center gap-3 bg-white p-3 rounded-lg shadow-sm">
+                        <svg class="w-5 h-5 text-purple-600 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"></path>
+                        </svg>
+                        <span class="text-gray-700">Technologie LED professionnelle</span>
+                    </div>
+                </div>
+
+                <!-- Price & CTA -->
+                <div class="bg-gradient-to-r from-purple-600 to-pink-600 rounded-2xl p-6 text-white">
+                    <div class="flex items-baseline gap-3 mb-4">
+                        <span class="text-5xl font-bold">€49.90</span>
+                        <span class="text-2xl line-through opacity-70">€99.90</span>
+                    </div>
+                    
+                    <div class="flex items-center gap-4 mb-6">
+                        <label class="text-white font-medium">Quantité:</label>
+                        <div class="flex items-center gap-2 bg-white/20 rounded-lg px-3 py-2">
+                            <button onclick="decreaseQty()" class="text-white font-bold text-xl w-8 h-8 hover:bg-white/20 rounded">
+                                -
+                            </button>
+                            <span id="quantity" class="text-white font-bold w-8 text-center">1</span>
+                            <button onclick="increaseQty()" class="text-white font-bold text-xl w-8 h-8 hover:bg-white/20 rounded">
+                                +
+                            </button>
+                        </div>
+                    </div>
+
+                    <button onclick="addToCart()" class="w-full bg-white text-purple-600 font-bold py-4 rounded-xl hover:shadow-xl transition transform hover:scale-105">
+                        Ajouter au panier - €<span id="total-price">49.90</span>
+                    </button>
+                </div>
+
+                <div class="flex items-center gap-4 text-sm text-gray-600">
+                    <div class="flex items-center gap-2">
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                        </svg>
+                        <span>Livraison 3-5 jours</span>
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                        </svg>
+                        <span>Garantie 30 jours</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Cart Modal -->
+    <div id="cart-modal" class="hidden fixed inset-0 bg-black/50 backdrop-blur-sm z-50 flex items-center justify-center p-4">
+        <div class="bg-white rounded-2xl max-w-2xl w-full max-h-[90vh] overflow-y-auto">
+            <!-- Modal Header -->
+            <div class="sticky top-0 bg-white border-b p-6 flex justify-between items-center">
+                <h3 id="modal-title" class="text-2xl font-bold text-gray-900">Votre panier</h3>
+                <button onclick="closeCart()" class="p-2 hover:bg-gray-100 rounded-full">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                    </svg>
+                </button>
+            </div>
+
+            <!-- Modal Content -->
+            <div id="modal-content" class="p-6">
+                <!-- Cart Step -->
+                <div id="step-cart">
+                    <div class="flex gap-4 bg-gray-50 p-4 rounded-xl mb-6">
+                        <img src="https://images.unsplash.com/photo-1596462502278-27bfdc403348?w=200&q=80" alt="Product" class="w-24 h-24 object-cover rounded-lg">
+                        <div class="flex-1">
+                            <h4 class="font-semibold text-gray-900">Appareil de Soin Visage LED Pro</h4>
+                            <p class="text-gray-600">Quantité: <span id="cart-quantity">1</span></p>
+                            <p class="text-lg font-bold text-purple-600 mt-2">€<span id="cart-total">49.90</span></p>
+                        </div>
+                    </div>
+
+                    <div class="border-t pt-4 space-y-2">
+                        <div class="flex justify-between text-lg">
+                            <span>Sous-total</span>
+                            <span>€<span id="subtotal">49.90</span></span>
+                        </div>
+                        <div class="flex justify-between text-lg">
+                            <span>Livraison</span>
+                            <span class="text-green-600 font-semibold">Gratuite</span>
+                        </div>
+                        <div class="flex justify-between text-2xl font-bold border-t pt-4">
+                            <span>Total</span>
+                            <span class="text-purple-600">€<span id="final-total">49.90</span></span>
+                        </div>
+                    </div>
+
+                    <button onclick="goToShipping()" class="w-full mt-6 bg-gradient-to-r from-purple-600 to-pink-600 text-white font-bold py-4 rounded-xl hover:shadow-xl transition">
+                        Procéder au paiement
+                    </button>
+                </div>
+
+                <!-- Shipping Step -->
+                <div id="step-shipping" class="hidden">
+                    <form id="shipping-form" class="space-y-4">
+                        <div class="grid md:grid-cols-2 gap-4">
+                            <input type="text" name="name" placeholder="Nom complet" required class="border rounded-lg px-4 py-3 w-full focus:ring-2 focus:ring-purple-600 outline-none">
+                            <input type="email" name="email" placeholder="Email" required class="border rounded-lg px-4 py-3 w-full focus:ring-2 focus:ring-purple-600 outline-none">
+                        </div>
+                        <input type="text" name="address" placeholder="Adresse" required class="border rounded-lg px-4 py-3 w-full focus:ring-2 focus:ring-purple-600 outline-none">
+                        <div class="grid md:grid-cols-2 gap-4">
+                            <input type="text" name="city" placeholder="Ville" required class="border rounded-lg px-4 py-3 w-full focus:ring-2 focus:ring-purple-600 outline-none">
+                            <input type="text" name="postal" placeholder="Code postal" required class="border rounded-lg px-4 py-3 w-full focus:ring-2 focus:ring-purple-600 outline-none">
+                        </div>
+                        <input type="tel" name="phone" placeholder="Téléphone" required class="border rounded-lg px-4 py-3 w-full focus:ring-2 focus:ring-purple-600 outline-none">
+                        
+                        <div class="flex gap-3 mt-6">
+                            <button type="button" onclick="backToCart()" class="flex-1 border-2 border-gray-300 text-gray-700 font-bold py-3 rounded-xl hover:bg-gray-50">
+                                Retour
+                            </button>
+                            <button type="submit" class="flex-1 bg-gradient-to-r from-purple-600 to-pink-600 text-white font-bold py-3 rounded-xl hover:shadow-xl">
+                                Payer €<span id="payment-total">49.90</span>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+
+                <!-- Processing Step -->
+                <div id="step-processing" class="hidden text-center py-12">
+                    <div class="animate-spin rounded-full h-16 w-16 border-b-4 border-purple-600 mx-auto mb-4"></div>
+                    <p class="text-xl text-gray-700">Traitement du paiement...</p>
+                </div>
+
+                <!-- Success Step -->
+                <div id="step-success" class="hidden text-center py-12">
+                    <div class="w-16 h-16 bg-green-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                        </svg>
+                    </div>
+                    <h4 class="text-2xl font-bold text-gray-900 mb-2">Merci pour votre commande !</h4>
+                    <p class="text-gray-600 mb-6">Un email de confirmation a été envoyé à <span id="confirmation-email"></span></p>
+                    <button onclick="closeCart()" class="bg-gradient-to-r from-purple-600 to-pink-600 text-white font-bold py-3 px-8 rounded-xl hover:shadow-xl">
+                        Fermer
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let quantity = 1;
+        const pricePerUnit = 49.90;
+
+        function updatePrice() {
+            const total = (quantity * pricePerUnit).toFixed(2);
+            document.getElementById('total-price').textContent = total;
+            document.getElementById('cart-quantity').textContent = quantity;
+            document.getElementById('cart-total').textContent = total;
+            document.getElementById('subtotal').textContent = total;
+            document.getElementById('final-total').textContent = total;
+            document.getElementById('payment-total').textContent = total;
+        }
+
+        function increaseQty() {
+            quantity++;
+            document.getElementById('quantity').textContent = quantity;
+            updatePrice();
+        }
+
+        function decreaseQty() {
+            if (quantity > 1) {
+                quantity--;
+                document.getElementById('quantity').textContent = quantity;
+                updatePrice();
+            }
+        }
+
+        function addToCart() {
+            document.getElementById('cart-badge').classList.remove('hidden');
+            openCart();
+        }
+
+        function openCart() {
+            document.getElementById('cart-modal').classList.remove('hidden');
+            showStep('cart');
+        }
+
+        function closeCart() {
+            document.getElementById('cart-modal').classList.add('hidden');
+            showStep('cart');
+        }
+
+        function showStep(step) {
+            document.getElementById('step-cart').classList.add('hidden');
+            document.getElementById('step-shipping').classList.add('hidden');
+            document.getElementById('step-processing').classList.add('hidden');
+            document.getElementById('step-success').classList.add('hidden');
+
+            if (step === 'cart') {
+                document.getElementById('modal-title').textContent = 'Votre panier';
+                document.getElementById('step-cart').classList.remove('hidden');
+            } else if (step === 'shipping') {
+                document.getElementById('modal-title').textContent = 'Informations de livraison';
+                document.getElementById('step-shipping').classList.remove('hidden');
+            } else if (step === 'processing') {
+                document.getElementById('modal-title').textContent = 'Paiement en cours...';
+                document.getElementById('step-processing').classList.remove('hidden');
+            } else if (step === 'success') {
+                document.getElementById('modal-title').textContent = 'Commande confirmée !';
+                document.getElementById('step-success').classList.remove('hidden');
+            }
+        }
+
+        function goToShipping() {
+            showStep('shipping');
+        }
+
+        function backToCart() {
+            showStep('cart');
+        }
+
+        document.getElementById('shipping-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const email = this.email.value;
+            
+            showStep('processing');
+            
+            setTimeout(() => {
+                document.getElementById('confirmation-email').textContent = email;
+                showStep('success');
+            }, 2000);
+        });
+    </script>
+</body>
+</html>
